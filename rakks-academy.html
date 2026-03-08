@@ -708,9 +708,7 @@
 <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
 <nav id="navbar">
   <a class="nav-logo" href="#">
-    <img src="https://i.imgur.com/placeholder.png" id="logo-img" alt="RAKKS Academy Logo"
-         onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'"/>
-    <div id="logo-fallback" style="display:flex;width:46px;height:46px;border-radius:50%;background:var(--navy);align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:14px;font-weight:900;color:#fff;">R</div>
+    <img src="images/logo.jpeg" id="logo-img" alt="RAKKS Academy Logo" style="height:46px;width:46px;object-fit:contain;border-radius:50%;" />
     <div class="nav-logo-text">
       <span class="nav-logo-name">RAKKS Academy</span>
       <span class="nav-logo-tag e">Discipline · Creativity · Excellence</span>
@@ -793,9 +791,8 @@
   <div class="about-grid reveal">
     <div class="about-visual">
       <div class="about-logo-display">
-        <img src="https://i.imgur.com/placeholder.png" id="about-logo"
-             alt="RAKKS Academy"
-             onerror="this.parentNode.innerHTML='<div style=\'font-family:Cinzel,serif;font-size:48px;font-weight:900;color:#fff;letter-spacing:0.05em;\'>RAKKS</div>'"/>
+        <img src="images/logo.jpeg" id="about-logo"
+             alt="RAKKS Academy" />
       </div>
       <div class="about-card">
         <span class="about-card-icon">🏆</span>
@@ -1741,8 +1738,7 @@
   <div class="footer-top">
     <div class="footer-brand">
       <div class="footer-logo">
-        <img src="https://i.imgur.com/placeholder.png" alt="RAKKS"
-             onerror="this.style.display='none'"/>
+        <img src="images/logo.jpeg" alt="RAKKS" />
         <span class="footer-logo-text">RAKKS Academy LLP</span>
       </div>
       <p class="footer-tagline e">Discipline · Creativity · Excellence</p>
@@ -1805,12 +1801,7 @@
 
 <!-- ═══ JAVASCRIPT ═════════════════════════════════════════ -->
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Logo injection
-  window.addEventListener('DOMContentLoaded', () => {
-    // We'll set the logo from the uploaded file path
-    const logoEls = document.querySelectorAll('#logo-img, #about-logo, footer img');
-    // In production replace with actual hosted URL. For now using inline SVG fallback.
-  });
+  // Logo loaded from local images/logo.jpeg — no JS injection needed
 
   // Navbar scroll effect
   window.addEventListener('scroll', () => {
